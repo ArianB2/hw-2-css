@@ -33,7 +33,7 @@
     color: #555;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 440px) {
     body {
       background-color: lightblue; /* This style applies only when the viewport is 600px wide or less */
       font-size: 30px;
