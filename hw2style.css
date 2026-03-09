@@ -1,0 +1,51 @@
+.expand-link {
+  display: inline-block; /* Allows padding/margin to affect layout */
+  padding: 5px 30px; /* Initial smaller padding */
+  margin: -5px -10px; /* Negative margin to offset initial padding */
+  background-color: rgb(204, 142, 10);
+  color: black;
+  text-decoration: none;
+  transition: padding 0.3s ease, margin 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.expand-link:hover {
+  padding: 15px 30px; /* Larger padding on hover */
+  margin: -15px -30px; /* Corresponding negative margin offset */
+  z-index: 10;
+  background-color: #0000ff;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes children to opposite ends */
+  align-items: center;           /* Vertically centers items in the middle */
+  /* Add padding, background, height etc. as needed */
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.nav_links ul {
+  display: flex;       /* Make the list items a flex container */
+  list-style-type: none; /* Remove default list bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links ul li {
+  margin-left: 20px; /* Add space between individual links */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: lightblue; /* This style applies only when the viewport is 600px wide or less */
+    font-size: 30px;
+  }
+
+}
+
+
+
+
+
+
